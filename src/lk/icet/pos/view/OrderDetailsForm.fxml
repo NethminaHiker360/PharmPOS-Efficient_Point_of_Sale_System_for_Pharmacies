@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="OrderDetailsPane" prefHeight="400.0" prefWidth="580.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.icet.pos.control.OrderDetailsFormController">
+   <children>
+      <Label alignment="CENTER" layoutX="220.0" layoutY="14.0" prefHeight="18.0" prefWidth="160.0" text="Order Details Form">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtId" layoutX="14.0" layoutY="84.0" />
+      <TextField fx:id="txtName" layoutX="225.0" layoutY="84.0" />
+      <TextField fx:id="txtDate" layoutX="413.0" layoutY="84.0" />
+      <TextField fx:id="txtTotal" layoutX="416.0" layoutY="360.0" />
+      <Label alignment="CENTER" layoutX="61.0" layoutY="64.0" text="Order id">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="246.0" layoutY="64.0" text="Customer Name">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="472.0" layoutY="64.0" text="Date">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="474.0" layoutY="338.0" text="Total">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblDetails" layoutX="16.0" layoutY="122.0" prefHeight="215.0" prefWidth="550.0">
+        <columns>
+          <TableColumn fx:id="colItem" prefWidth="88.79998588562012" text="Item" />
+          <TableColumn fx:id="colDescription" prefWidth="188.79999542236328" text="Description" />
+            <TableColumn fx:id="colQTY" prefWidth="132.79998779296875" text="QTY" />
+            <TableColumn fx:id="colUnitPrice" prefWidth="140.79995727539062" text="Unit Price" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
